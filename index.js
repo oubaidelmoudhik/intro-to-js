@@ -54,14 +54,14 @@
 
 //  3 - Variables
 // initializing a variable
-let firstName = 'oubaid';
+// let firstName = 'oubaid';
 // console.log(firstName);
 
 // declaring a variable
-let age; // undefined
+// let age; // undefined
 
 // Asssigning a variable
-age = 15 + 20;
+// age = 15 + 20;
 
 // Manupilating variable
 // let num = 42;
@@ -79,4 +79,59 @@ age = 15 + 20;
 // console.log(num);
 
 // NaN => Not a Number
-console.log('fish' * 3);
+// console.log('fish' * 3);
+
+
+// 4 - Strings
+// Strings declaration:
+
+let firstname = 'oubaid';
+let otherName = 'malak';
+
+let phrase = "That's a good string";
+let phrase2 = 'This is another one';
+let phrase3 = "she said: \"welcome home!\"";
+
+let phare4 = 'That\'s a goog string';
+// console.log(phrase3);
+
+// Calculating length:
+// console.log(firstname.length);
+
+// Indexing a string:
+let thirdLetter = otherName[2];
+// console.log(thirdLetter);
+let webDev = "Web Dev";
+// console.log(webDev[10]); => undefined
+
+// Finding the index of:
+
+// console.log(phrase.indexOf("g"));
+// console.log('Web dev is amazing'.indexOf("d"));
+// console.log('Hello, world'.indexOf("f")); // => -1
+// console.log('Hello'.indexOf("llo")); // => 2
+
+// Concatenation two strings: (joining two stings)
+let hello = 'Hello ' + firstname + ", how are you";
+
+// console.log(hello);
+// console.log('I love' + ' ' + "web dev");
+
+// String interpolation: (template literal ES6)
+// we use the backtick
+// let age = 19;
+// let lastName = 'bellouchi';
+
+// let introduction = `hello, my name is ${otherName}, my last name is ${lastName}, and my age is ${age || 25}`;
+// let introduction2 = 'hello, my name is ' + otherName + ', my last name is ' + lastName + ', and my age is ' + age;
+// console.log(introduction);
+// console.log(introduction2);
+
+// let multiLineStr = 'this is \nmulti \nline';
+// console.log(multiLineStr);
+// let multiLineStr2 = `this
+// is
+// multi
+// line
+// example`;
+// console.log(multiLineStr2);
