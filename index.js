@@ -135,3 +135,32 @@ let hello = 'Hello ' + firstname + ", how are you";
 // line
 // example`;
 // console.log(multiLineStr2);
+
+// FUNCTIONS -> a set of reusable code that will run when called
+// (a + b) / 2
+console.log((5 + 5) / 2);
+console.log((15 + 3) / 2);
+console.log((7 + 2) / 2);
+console.log((14 + 12) / 2);
+
+// function declaration syntax: function nameOfTheFunction() {}
+function sayHello(name) {
+    console.log("hello " + name);
+}
+// calling or invoking the function
+// sayHello('malak');
+// sayHello('oubaid');
+
+function average(a, b) {
+    console.log((a + b) / 2);
+}
+
+average(10, 15);
+
+function calculateAge(year) {
+    const currentYear = 2024;
+    console.log(currentYear - year);
+}
+
+calculateAge(2004);
+calculateAge(1998);
