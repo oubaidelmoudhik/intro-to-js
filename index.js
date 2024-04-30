@@ -138,29 +138,41 @@ let hello = 'Hello ' + firstname + ", how are you";
 
 // FUNCTIONS -> a set of reusable code that will run when called
 // (a + b) / 2
-console.log((5 + 5) / 2);
-console.log((15 + 3) / 2);
-console.log((7 + 2) / 2);
-console.log((14 + 12) / 2);
+// console.log((5 + 5) / 2);
+// console.log((15 + 3) / 2);
+// console.log((7 + 2) / 2);
+// console.log((14 + 12) / 2);
 
 // function declaration syntax: function nameOfTheFunction() {}
 function sayHello(name) {
     console.log("hello " + name);
 }
 // calling or invoking the function
+
 // sayHello('malak');
 // sayHello('oubaid');
 
-function average(a, b) {
-    console.log((a + b) / 2);
-}
+// Order of code
+// function callMe() {
+//     console.log("second");
+//     console.log("third");
+// }
 
-average(10, 15);
+// console.log("first");
+// callMe();
+// console.log("fourth");
 
+// Return:
 function calculateAge(year) {
-    const currentYear = 2024;
-    console.log(currentYear - year);
+    return 2024 - year;
 }
+let myAge = `my age is ${calculateAge(2004)}`; // my age is 20
 
-calculateAge(2004);
-calculateAge(1998);
+function average(number1, number2) {
+  let sum = number1 + number2;
+  return sum / 2;
+  // Anything under the `return sum` statement will NOT be executed.
+  console.log("this will not run");
+  return false;
+}
+// console.log(average(10));
