@@ -176,3 +176,133 @@ function average(number1, number2) {
   return false;
 }
 // console.log(average(10));
+
+// {} braces
+// [] brackets
+// () parentheses
+// ***************************Conditionals: control flow
+
+// function mathFun(x) {
+// // nesting conditionals
+//   if (x === "math") {
+//     if (x === "math" && x[0] === "m") {
+//       if (x[1] === "a") {
+//         console.log("this got confusing fast");
+//       } else {
+//         console.log("that is not math!");
+//       }
+//     } else {
+//       console.log("that is for sure not math!");
+//     }
+//   } else {
+//     console.log("I will return if everything above me is false!");
+//   }
+// };
+// mathFun("math");
+
+
+// ***************************Mutually Exclusive Conditions:
+
+// function smallNum() {
+//   console.log("the number is small");
+// }
+
+// function bigNum() {
+//   console.log("the number is big");
+// }
+
+// function numberSeperator(num) {
+//   if (num < 100) {
+//     smallNum();
+//   }
+//   if (num === 100) {
+//     smallNum();
+//   }
+//   if (num > 100) {
+//     bigNum();
+//   }
+// }
+// function numberSeperator(num) {
+//   if (num <= 100) {
+//     smallNum();
+//   } else {
+//     bigNum();
+//   }
+// }
+
+// write a function that checks if the number is even:
+// function isEven(num) {
+//     if (num % 2 === 0) {
+//       console.log("the number is even");
+//     } else {
+//       console.log("the number is odd");
+//     }
+// }
+
+// "this is a string" //// "iS a"
+// function isSubString(searchString, subString) {
+
+//   let lowerSearchStr = searchString.toLowerCase();
+//   let lowersubStr = subString.toLowerCase();
+//   let condition = lowerSearchStr.indexOf(lowersubStr) === -1
+
+//   if (condition) {
+//       return false;
+//   } else {
+//       return true;
+//   }
+// }
+
+// function threeOrSeven(num) {
+//   // if (num % 3 === 0 || num % 7 === 0) {
+//   //   return true;
+//   // } else {
+//   //   return false;
+//   // }
+//   return num % 3 === 0 || num % 7 === 0;
+// }
+
+// ******************* Control flow: Loops
+
+// while there are still dirty dogs i still have a job to do =>>> the condition
+
+// 0 dog clean and 6 dirty
+// 1 dog clean and 5 dirty => increment by 1
+// 2 dog clean and 4 dirty
+// 3 dog clean and 3 dirty
+// 4 dog clean and 2 dirty
+// 5 dog clean and 1 dirty
+// 6 dog clean and 0 dirty
+
+//  this is the idea of looping
+
+// ******* while loop
+// let index = 0;
+
+// while (index < 6) {
+//   console.log(`cleaned dog number ${index + 1}`);
+//   index++;
+// }
+
+//  ********* for loop
+
+// for (initial expression; condition; loopEnd expression) {}
+// index++ => index = index + 1;
+
+// for (let index = 0; index < 6; index++) {
+//   console.log(`cleaned dog number ${index + 1}`);
+// }
+
+// let testString = "this is a test string";
+
+// for (let index = 0; index < testString.length; index++) {
+//   console.log(testString[index].toUpperCase());
+// }
+
+function logBetween(low, high) {
+  // iterate over numbers
+  for (let index = low; index <= high; index++) {
+    console.log(index);
+  }
+}
+logBetween(-10, 3);
