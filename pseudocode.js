@@ -16,19 +16,24 @@
 //      - if it is, return false (not prime)
 // 3- after the loop, return true
 
+
+
+
+
 function isPrime(number) {
+  // base case: any number less than 2 are not prime
   if (number < 2) {
     return false;
   }
 
-  for (let i = 2; i < number; i++) {
-    if (number % i === 0) {
+  let i = 2; // start from the base case
+  while (i < number) {  // do not include the number itself
+    if (number % i === 0) {   // check if i is a factor of the number
       return false;
     }
+    i++;
   }
 
+  // number must be prime if it hasn't met the above conditions
   return true;
 }
-
-console.log(isPrime(7));
-console.log(isPrime(8));
