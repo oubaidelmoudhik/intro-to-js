@@ -33,7 +33,7 @@ function longestName(names) {
     return currentLongest;
 }
 
-testNames = ["James", "Patricia", "Michael", "Elizabeth", "Christopher",
+let testNames = ["James", "Patricia", "Michael", "Elizabeth", "Christopher",
              "Sarah", "Margaret", "Kenneth", "Stephanie", "Jonathan",
              "Jeremy", "Samantha", "Alexander", "Catherine", "Benjamin"]
 
