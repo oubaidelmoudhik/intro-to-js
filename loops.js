@@ -96,3 +96,16 @@
 
 // console.log(eCounter('wonderful')); // 1
 // console.log(eCounter('preview')); // 2
+
+let numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+  let number = numbers[i];
+  console.log(number);
+}
+console.log('---------------');
+
+// For ... of (loop)
+for (let number of numbers) {
+  console.log(number);
+}
