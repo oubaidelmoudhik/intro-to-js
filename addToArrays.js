@@ -122,4 +122,5 @@
 
 // colors.splice(2, 3, 'black');
 
-// console.log(colors);
+// console.log(colors)
+
